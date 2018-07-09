@@ -23,7 +23,7 @@ class Tweet extends Component {
     }
 
     const {
-      name, avatar, timpestamp, text, hasLiked, likes, replies, id, parent
+      name, avatar, timestamp, text, hasLiked, likes, replies, id, parent
     } = tweet
 
     return (
@@ -36,7 +36,7 @@ class Tweet extends Component {
 
         <div className='tweet-info'>
           <span>{name}</span>
-          <div>{formatDate(timpestamp)}</div>
+          <div>{formatDate(timestamp)}</div>
           {parent && (
             <button className='replying-to' onClick={(e) => this.toParent(parent.id)}>
               Replying to @{parent.author}
