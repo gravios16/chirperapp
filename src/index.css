@@ -132,6 +132,7 @@ li {
   padding: 0;
   color: #969696;
   cursor: pointer;
+  text-align: left;
 }
 
 .heart-button {

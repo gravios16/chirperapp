@@ -4,6 +4,8 @@ import { handleInitialData } from '../actions/shared'
 
 import Dashboard from './Dashboard'
 
+import LoadingBar from 'react-redux-loading'
+
 class App extends Component {
   componentDidMount() {
     this.props.dispatch(handleInitialData())
@@ -12,6 +14,7 @@ class App extends Component {
   render() {
     return (
       <div>
+        <LoadingBar />
         {this.props.loading === false && <Dashboard />}
       </div>
     )
