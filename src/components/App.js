@@ -3,8 +3,8 @@ import { connect } from 'react-redux'
 import { handleInitialData } from '../actions/shared'
 
 import Dashboard from './Dashboard'
-
 import LoadingBar from 'react-redux-loading'
+import NewTweet from './NewTweet'
 
 class App extends Component {
   componentDidMount() {
@@ -15,7 +15,7 @@ class App extends Component {
     return (
       <div>
         <LoadingBar />
-        {this.props.loading === false && <Dashboard />}
+        {this.props.loading === false && <NewTweet />}
       </div>
     )
   }
